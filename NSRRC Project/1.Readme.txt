@@ -1,0 +1,23 @@
+1. Open NSRRC Project.lvproj
+2. Right click on cRIO Target (NI-cRIO-9043-01CF63DF) and select "connect".
+3. Open "RT Main.vi" under cRIO Target category.
+4. Make sure all setting are correct as below:
+	a.cDAQ Channel:	cDAQ9185Mod1/ai0
+	b.AI Rate (Hz):	20k
+	c.AO Channel:	Mod4/ao0
+	d.AO Smp. Rate:	10000
+	e.AO # of Smp.:	2000
+	f.AO Sgnl Typ.:	select one type, Freq.=500, Amp.<=2.
+
+5. Run "RT Main.vi"
+
+6. Open "EPICS Client (Host).vi" under My Computer category.
+7. Run "EPICS Client (Host).vi"
+	a. Sometime there has communication failed when first run, just click "Continue" then all will be fine.
+
+
+Systemlink login info.
+account: 	admin
+passwords:	ni
+
+Structure original picture located in ppt file in NSRRC Project folder.
